@@ -1,6 +1,6 @@
 # Isaac Newton: The Man Who Explained the Universe
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

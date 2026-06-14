@@ -1,6 +1,6 @@
 # The Great Depression: When the World's Economy Collapsed
 
-> Approximate reading time: 15 minutes | Word count: ~2,200
+> Approximate reading time: 15 minutes
 
 ---
 

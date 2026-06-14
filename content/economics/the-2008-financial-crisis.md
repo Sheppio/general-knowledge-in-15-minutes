@@ -1,6 +1,6 @@
 # The 2008 Financial Crisis: When the Banks Broke
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

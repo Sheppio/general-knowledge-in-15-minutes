@@ -1,6 +1,6 @@
 # The History of Human Rights: The Long Struggle for Human Dignity
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

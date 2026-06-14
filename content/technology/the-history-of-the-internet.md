@@ -1,6 +1,6 @@
 # The History of the Internet: How We Connected the World
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

@@ -1,6 +1,6 @@
 # The Ottoman Empire: Six Centuries at the Crossroads of History
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

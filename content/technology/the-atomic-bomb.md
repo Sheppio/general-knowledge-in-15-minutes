@@ -1,6 +1,6 @@
 # The Atomic Bomb: From Theory to Trinity
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

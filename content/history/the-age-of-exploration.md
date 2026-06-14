@@ -1,6 +1,6 @@
 # The Age of Exploration: When Europe Found the World
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

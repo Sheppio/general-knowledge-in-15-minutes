@@ -1,6 +1,6 @@
 # Climate Change: The Science of a Warming World
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

@@ -1,6 +1,6 @@
 # How Vaccines Work: The Science That Saved Billions of Lives
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

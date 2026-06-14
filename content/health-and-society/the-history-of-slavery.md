@@ -1,6 +1,6 @@
 # The History of Slavery: Humanity's Darkest Institution
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

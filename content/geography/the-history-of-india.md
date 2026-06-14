@@ -1,6 +1,6 @@
 # The History of India: A Civilisation of Extraordinary Depth
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

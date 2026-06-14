@@ -1,6 +1,6 @@
 # The 1918 Influenza Pandemic: The Forgotten Catastrophe
 
-> Approximate reading time: 15 minutes | Word count: ~2,200
+> Approximate reading time: 15 minutes
 
 ---
 

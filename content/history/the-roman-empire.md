@@ -1,6 +1,6 @@
 # The Rise and Fall of the Roman Empire
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

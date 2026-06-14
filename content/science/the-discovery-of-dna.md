@@ -1,6 +1,6 @@
 # The Discovery of DNA: The Secret of Life
 
-> Approximate reading time: 15 minutes | Word count: ~2,200
+> Approximate reading time: 15 minutes
 
 ---
 

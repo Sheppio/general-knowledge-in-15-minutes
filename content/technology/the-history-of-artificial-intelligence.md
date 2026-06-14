@@ -1,6 +1,6 @@
 # The History of Artificial Intelligence: From Dream to Disruption
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

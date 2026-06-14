@@ -1,6 +1,6 @@
 # Napoleon Bonaparte: Genius, Conqueror, and Cautionary Tale
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

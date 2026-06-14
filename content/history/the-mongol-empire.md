@@ -1,6 +1,6 @@
 # The Mongol Empire: The Greatest Land Empire in History
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

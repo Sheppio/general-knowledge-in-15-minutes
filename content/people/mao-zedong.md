@@ -1,6 +1,6 @@
 # Mao Zedong: Revolution, Catastrophe, and the Making of Modern China
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

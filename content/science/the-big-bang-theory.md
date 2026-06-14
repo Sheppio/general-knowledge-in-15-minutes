@@ -1,6 +1,6 @@
 # The Big Bang Theory: The Origin of Everything
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

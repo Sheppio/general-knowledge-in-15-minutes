@@ -1,6 +1,6 @@
 # The Silk Road: The World's First Global Trade Network
 
-> Approximate reading time: 15 minutes | Word count: ~2,200
+> Approximate reading time: 15 minutes
 
 ---
 

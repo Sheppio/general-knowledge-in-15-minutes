@@ -1,6 +1,6 @@
 # The Black Death: Europe's Greatest Catastrophe
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

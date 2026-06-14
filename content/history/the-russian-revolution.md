@@ -1,6 +1,6 @@
 # The Russian Revolution: The End of the Tsars
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

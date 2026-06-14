@@ -1,6 +1,6 @@
 # The Viking Age: Raiders, Traders, and Explorers
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

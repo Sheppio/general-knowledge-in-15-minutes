@@ -1,6 +1,6 @@
 # The History of Japan: An Island Nation's Journey Through Time
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

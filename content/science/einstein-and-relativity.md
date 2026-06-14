@@ -1,6 +1,6 @@
 # Albert Einstein and the Theory of Relativity
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

@@ -1,6 +1,6 @@
 # The Holocaust: The Machinery of Genocide
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 

@@ -1,6 +1,6 @@
 # Karl Marx: The Man Who Changed How We See Society
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

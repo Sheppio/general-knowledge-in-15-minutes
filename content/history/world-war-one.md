@@ -1,6 +1,6 @@
 # World War One: How It Started, What Happened, and How It Ended
 
-> Approximate reading time: 15 minutes | Word count: ~2,250
+> Approximate reading time: 15 minutes
 
 ---
 

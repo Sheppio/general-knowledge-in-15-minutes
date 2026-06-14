@@ -1,6 +1,6 @@
 # Abraham Lincoln: The President Who Held a Nation Together
 
-> Approximate reading time: 15 minutes | Word count: ~2,300
+> Approximate reading time: 15 minutes
 
 ---
 

@@ -1,6 +1,6 @@
 # The HIV/AIDS Crisis: A Modern Plague
 
-> Approximate reading time: 15 minutes | Word count: ~2,350
+> Approximate reading time: 15 minutes
 
 ---
 
