@@ -42,7 +42,7 @@ What remained was a harder, leaner, more Greek-speaking state, centred on Consta
 
 The empire survived repeated Arab sieges of Constantinople itself, in six hundred and seventy-four and again in seven hundred and seventeen, thanks in large part to Greek fire — a mysterious incendiary weapon that burned on water and could not be extinguished. The empire stabilised, and in the tenth and eleventh centuries it pushed its frontiers back into Syria and reconquered much of the Balkans.
 
-But cracks were forming. In ten sixty-six, the Seljuk Turks — a new and formidable Islamic power from central Asia — inflicted a catastrophic defeat on the Byzantine army at the Battle of Manzikert in eastern Anatolia. The emperor Romanos IV was captured on the battlefield, an almost unimaginable humiliation. Most of Anatolia — the heartland of what remained of the empire, the source of most of its army and much of its revenue — fell to the Turks within years. It was this crisis that prompted Emperor Alexios I to send his famous appeal to Pope Urban II in the west, asking for military assistance. The response was the First Crusade.
+But cracks were forming. In ten seventy-one, the Seljuk Turks — a new and formidable Islamic power from central Asia — inflicted a catastrophic defeat on the Byzantine army at the Battle of Manzikert in eastern Anatolia. The emperor Romanos IV was captured on the battlefield, an almost unimaginable humiliation. Most of Anatolia — the heartland of what remained of the empire, the source of most of its army and much of its revenue — fell to the Turks within years. It was this crisis that prompted Emperor Alexios I to send his famous appeal to Pope Urban II in the west, asking for military assistance. The response was the First Crusade.
 
 ---
 
