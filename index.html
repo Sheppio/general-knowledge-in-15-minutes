@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Knowledge in 15 Minutes</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+  <style>
+    :root {
+      --sidebar-width: 280px;
+      --bg: #f5f4f0;
+      --sidebar-bg: #1c1c1e;
+      --sidebar-text: #e0ddd6;
+      --sidebar-muted: #888;
+      --sidebar-hover: #2c2c2e;
+      --sidebar-active: #3a3a3c;
+      --accent: #c9a84c;
+      --done-dot: #5cb85c;
+      --pending-dot: #555;
+      --content-bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --border: #e5e3dc;
+      --link: #1a5276;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ── Sidebar ── */
+    #sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      background: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+    }
+
+    #sidebar-header {
+      padding: 24px 20px 16px;
+      border-bottom: 1px solid #333;
+    }
+
+    #sidebar-header h1 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    #sidebar-header p {
+      font-size: 11px;
+      color: var(--sidebar-muted);
+    }
+
+    #progress-bar-wrap {
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    #progress-label {
+      font-size: 11px;
+      color: var(--sidebar-muted);
+      margin-bottom: 6px;
+    }
+
+    #progress-bar {
+      height: 3px;
+      background: #333;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    #progress-fill {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+
+    #nav {
+      padding: 8px 0 24px;
+      flex: 1;
+    }
+
+    .category-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sidebar-muted);
+      padding: 16px 20px 6px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 20px;
+      font-size: 13px;
+      line-height: 1.35;
+      color: var(--sidebar-text);
+      cursor: pointer;
+      transition: background 0.15s;
+      border-left: 3px solid transparent;
+    }
+
+    .nav-item:hover {
+      background: var(--sidebar-hover);
+    }
+
+    .nav-item.active {
+      background: var(--sidebar-active);
+      border-left-color: var(--accent);
+      color: #fff;
+    }
+
+    .nav-item.pending {
+      color: var(--sidebar-muted);
+      cursor: default;
+    }
+
+    .nav-item.pending:hover {
+      background: transparent;
+    }
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .dot.done { background: var(--done-dot); }
+    .dot.pending { background: var(--pending-dot); border: 1px solid #444; }
+
+    .nav-date {
+      font-size: 10px;
+      color: var(--sidebar-muted);
+      line-height: 1.3;
+      margin-top: 1px;
+    }
+
+    /* ── Main content ── */
+    #main {
+      margin-left: var(--sidebar-width);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    #content-area {
+      flex: 1;
+      padding: 48px 40px;
+      max-width: 820px;
+    }
+
+    /* ── Welcome screen ── */
+    #welcome {
+      padding-top: 80px;
+    }
+
+    #welcome h2 {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    #welcome p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    #welcome .stat-row {
+      display: flex;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .stat-box {
+      background: var(--content-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 24px;
+      min-width: 140px;
+    }
+
+    .stat-box .num {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .stat-box .label {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    #welcome .hint {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ── Coming soon ── */
+    #coming-soon {
+      padding-top: 80px;
+      display: none;
+    }
+
+    #coming-soon h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    #coming-soon p {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    /* ── Article ── */
+    #article-wrap {
+      display: none;
+    }
+
+    #article-meta {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 20px;
+    }
+
+    #article-meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #article {
+      background: var(--content-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 48px 56px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    /* Article markdown styles */
+    #article h1 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    #article blockquote {
+      border-left: none;
+      background: #f9f8f5;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 16px;
+      margin: 0 0 28px;
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    #article p {
+      margin-bottom: 22px;
+    }
+
+    #article h2 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    #article hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    #article ul {
+      padding-left: 20px;
+      margin-bottom: 22px;
+    }
+
+    #article li {
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    #article a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    #article a:hover {
+      color: #c0392b;
+    }
+
+    /* Loading state */
+    #loading {
+      display: none;
+      padding-top: 80px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Scrollbar */
+    #sidebar::-webkit-scrollbar { width: 4px; }
+    #sidebar::-webkit-scrollbar-track { background: transparent; }
+    #sidebar::-webkit-scrollbar-thumb { background: #444; border-radius: 2px; }
+  </style>
+</head>
+<body>
+
+<nav id="sidebar">
+  <div id="sidebar-header">
+    <h1>General Knowledge</h1>
+    <p>15 minutes per subject</p>
+  </div>
+  <div id="progress-bar-wrap">
+    <div id="progress-label"></div>
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+  <div id="nav"></div>
+</nav>
+
+<main id="main">
+  <div id="content-area">
+
+    <div id="welcome">
+      <h2>General Knowledge<br>in 15 Minutes</h2>
+      <p>Fact-checked audio scripts on important subjects in history, science, economics, philosophy, and more.</p>
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="num" id="stat-done">—</div>
+          <div class="label">Scripts complete</div>
+        </div>
+        <div class="stat-box">
+          <div class="num" id="stat-total">—</div>
+          <div class="label">Total subjects</div>
+        </div>
+        <div class="stat-box">
+          <div class="num">~15</div>
+          <div class="label">Minutes per script</div>
+        </div>
+      </div>
+      <p class="hint">Select a subject from the sidebar to start reading.</p>
+    </div>
+
+    <div id="loading">Loading…</div>
+
+    <div id="coming-soon">
+      <h2 id="coming-soon-title"></h2>
+      <p>This script hasn't been written yet. Check back soon.</p>
+    </div>
+
+    <div id="article-wrap">
+      <div id="article-meta">
+        <span id="meta-category"></span>
+        <span id="meta-words"></span>
+        <span id="meta-time"></span>
+      </div>
+      <div id="article"></div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+  const subjects = [
+    {
+      category: "History",
+      items: [
+        { title: "Ancient Egypt",                                  file: "content/history/ancient-egypt.md",               dateRange: "c. 3100 – 30 BC" },
+        { title: "The Rise and Fall of the Roman Empire",          file: "content/history/the-roman-empire.md",            dateRange: "27 BC – 476 AD" },
+        { title: "The Byzantine Empire",                           file: null,                                             dateRange: "330 – 1453" },
+        { title: "The Birth of Islam",                             file: null,                                             dateRange: "c. 610 – 750" },
+        { title: "The Viking Age",                                 file: "content/history/the-viking-age.md",              dateRange: "793 – 1066" },
+        { title: "The Crusades",                                   file: "content/history/the-crusades.md",                dateRange: "1096 – 1291" },
+        { title: "The Mongol Empire",                              file: "content/history/the-mongol-empire.md",           dateRange: "1206 – 1368" },
+        { title: "The Ottoman Empire",                             file: "content/history/the-ottoman-empire.md",          dateRange: "1299 – 1922" },
+        { title: "The Hundred Years War",                          file: null,                                             dateRange: "1337 – 1453" },
+        { title: "The Black Death",                                file: "content/history/the-black-death.md",             dateRange: "1347 – 1353" },
+        { title: "The Ming Dynasty",                               file: null,                                             dateRange: "1368 – 1644" },
+        { title: "The Age of Exploration",                         file: "content/history/the-age-of-exploration.md",      dateRange: "c. 1400 – 1600" },
+        { title: "The Reformation",                                file: null,                                             dateRange: "1517 – 1648" },
+        { title: "The American Revolution",                        file: "content/history/the-american-revolution.md",     dateRange: "1775 – 1783" },
+        { title: "The French Revolution",                          file: "content/history/the-french-revolution.md",       dateRange: "1789 – 1799" },
+        { title: "The American Civil War",                         file: "content/history/the-american-civil-war.md",      dateRange: "1861 – 1865" },
+        { title: "The Scramble for Africa",                        file: null,                                             dateRange: "1881 – 1914" },
+        { title: "The Boer War",                                   file: null,                                             dateRange: "1899 – 1902" },
+        { title: "World War One",                                  file: "content/history/world-war-one.md",               dateRange: "1914 – 1918" },
+        { title: "The Russian Revolution",                         file: "content/history/the-russian-revolution.md",      dateRange: "1917" },
+        { title: "The Rise of Fascism in Europe",                  file: null,                                             dateRange: "1922 – 1945" },
+        { title: "The Spanish Civil War",                          file: null,                                             dateRange: "1936 – 1939" },
+        { title: "World War Two",                                  file: "content/history/world-war-two.md",               dateRange: "1939 – 1945" },
+        { title: "The Holocaust",                                  file: "content/history/the-holocaust.md",               dateRange: "1941 – 1945" },
+        { title: "The Cold War",                                   file: "content/history/the-cold-war.md",                dateRange: "1947 – 1991" },
+        { title: "The Rwandan Genocide",                           file: "content/history/the-rwandan-genocide.md",        dateRange: "1994" },
+      ]
+    },
+    {
+      category: "Science",
+      items: [
+        { title: "The Space Race",                                 file: "content/science/the-space-race.md" },
+        { title: "Charles Darwin and the Theory of Evolution",     file: "content/science/charles-darwin-evolution.md" },
+        { title: "Albert Einstein and the Theory of Relativity",   file: "content/science/einstein-and-relativity.md" },
+        { title: "The Discovery of DNA",                           file: "content/science/the-discovery-of-dna.md" },
+        { title: "The Big Bang Theory",                            file: "content/science/the-big-bang-theory.md" },
+        { title: "Isaac Newton and the Laws of Motion",            file: "content/science/isaac-newton.md" },
+        { title: "The History of Medicine",                        file: null },
+        { title: "Climate Change — The Science",                   file: "content/science/climate-change.md" },
+        { title: "How Vaccines Work",                              file: "content/science/how-vaccines-work.md" },
+        { title: "The Theory of Plate Tectonics",                  file: null },
+        { title: "The Quantum Revolution",                         file: null },
+        { title: "CRISPR and the Future of Genetics",              file: null },
+        { title: "Stephen Hawking and Black Holes",                file: null },
+        { title: "The History of Astronomy",                       file: null },
+      ]
+    },
+    {
+      category: "Economics",
+      items: [
+        { title: "The Great Depression",                           file: "content/economics/the-great-depression.md" },
+        { title: "The 2008 Financial Crisis",                      file: "content/economics/the-2008-financial-crisis.md" },
+        { title: "Capitalism — How It Works",                      file: "content/economics/capitalism.md" },
+        { title: "The Rise of China's Economy",                    file: null },
+        { title: "The History of Money",                           file: "content/economics/the-history-of-money.md" },
+        { title: "Globalisation — Winners and Losers",             file: null },
+        { title: "The Economics of Inequality",                    file: null },
+      ]
+    },
+    {
+      category: "Technology",
+      items: [
+        { title: "The Industrial Revolution",                      file: "content/technology/the-industrial-revolution.md" },
+        { title: "The History of the Internet",                    file: "content/technology/the-history-of-the-internet.md" },
+        { title: "The History of Artificial Intelligence",         file: "content/technology/the-history-of-artificial-intelligence.md" },
+        { title: "The Atomic Bomb — From Theory to Trinity",       file: "content/technology/the-atomic-bomb.md" },
+        { title: "The History of Flight",                          file: null },
+        { title: "The History of Electricity",                     file: null },
+        { title: "The Green Revolution",                           file: null },
+      ]
+    },
+    {
+      category: "Philosophy & Ideas",
+      items: [
+        { title: "Ancient Greek Philosophy",                       file: "content/philosophy/ancient-greek-philosophy.md" },
+        { title: "The Enlightenment",                              file: "content/philosophy/the-enlightenment.md" },
+        { title: "Karl Marx and the Communist Manifesto",          file: "content/philosophy/karl-marx.md" },
+        { title: "Existentialism",                                 file: "content/philosophy/existentialism.md" },
+        { title: "The Scientific Revolution",                      file: null },
+        { title: "Sigmund Freud and the Unconscious Mind",         file: "content/philosophy/sigmund-freud.md" },
+        { title: "Adam Smith and the Wealth of Nations",           file: null },
+      ]
+    },
+    {
+      category: "Geography & Culture",
+      items: [
+        { title: "The Silk Road",                                  file: "content/geography/the-silk-road.md" },
+        { title: "The British Empire",                             file: "content/geography/the-british-empire.md" },
+        { title: "The Amazon — Earth's Greatest Rainforest",       file: null },
+        { title: "The History of Japan",                           file: "content/geography/the-history-of-japan.md" },
+        { title: "The History of India",                           file: "content/geography/the-history-of-india.md" },
+        { title: "Africa Before Colonialism",                      file: null },
+        { title: "The History of China",                           file: null },
+        { title: "The Mediterranean World",                        file: null },
+      ]
+    },
+    {
+      category: "People",
+      items: [
+        { title: "Napoleon Bonaparte",                             file: "content/people/napoleon-bonaparte.md" },
+        { title: "The Life of Winston Churchill",                  file: "content/people/winston-churchill.md" },
+        { title: "Marie Curie",                                    file: "content/people/marie-curie.md" },
+        { title: "Abraham Lincoln",                                file: "content/people/abraham-lincoln.md" },
+        { title: "Nelson Mandela",                                 file: "content/people/nelson-mandela.md" },
+        { title: "Mahatma Gandhi",                                 file: "content/people/mahatma-gandhi.md" },
+        { title: "Cleopatra",                                      file: null },
+        { title: "Leonardo da Vinci",                              file: null },
+        { title: "Galileo Galilei",                                file: null },
+        { title: "Julius Caesar",                                  file: "content/people/julius-caesar.md" },
+        { title: "Elizabeth I",                                    file: null },
+        { title: "Mao Zedong",                                     file: "content/people/mao-zedong.md" },
+        { title: "Joseph Stalin",                                  file: null },
+        { title: "Martin Luther King Jr.",                         file: "content/people/martin-luther-king-jr.md" },
+        { title: "Nikola Tesla",                                   file: null },
+        { title: "Ada Lovelace",                                   file: null },
+      ]
+    },
+    {
+      category: "Health & Society",
+      items: [
+        { title: "The 1918 Influenza Pandemic",                    file: "content/health-and-society/the-1918-flu-pandemic.md" },
+        { title: "The History of Mental Health",                   file: null },
+        { title: "The HIV/AIDS Crisis",                            file: "content/health-and-society/the-hiv-aids-crisis.md" },
+        { title: "The History of Human Rights",                    file: "content/health-and-society/the-history-of-human-rights.md" },
+        { title: "The History of Democracy",                       file: "content/health-and-society/the-history-of-democracy.md" },
+        { title: "The History of Slavery",                         file: "content/health-and-society/the-history-of-slavery.md" },
+      ]
+    },
+  ];
+
+  // Count done/total
+  let totalDone = 0, totalAll = 0;
+  subjects.forEach(cat => cat.items.forEach(item => {
+    totalAll++;
+    if (item.file) totalDone++;
+  }));
+
+  document.getElementById('stat-done').textContent = totalDone;
+  document.getElementById('stat-total').textContent = totalAll;
+  document.getElementById('progress-label').textContent = `${totalDone} of ${totalAll} complete`;
+  document.getElementById('progress-fill').style.width = `${(totalDone / totalAll * 100).toFixed(1)}%`;
+
+  // Build nav
+  const nav = document.getElementById('nav');
+  let activeEl = null;
+
+  subjects.forEach(cat => {
+    const label = document.createElement('div');
+    label.className = 'category-label';
+    label.textContent = cat.category;
+    nav.appendChild(label);
+
+    cat.items.forEach(item => {
+      const el = document.createElement('div');
+      el.className = 'nav-item' + (item.file ? '' : ' pending');
+
+      const dot = document.createElement('div');
+      dot.className = 'dot ' + (item.file ? 'done' : 'pending');
+
+      const textWrap = document.createElement('div');
+      const titleSpan = document.createElement('div');
+      titleSpan.textContent = item.title;
+      textWrap.appendChild(titleSpan);
+
+      if (item.dateRange) {
+        const dateSpan = document.createElement('div');
+        dateSpan.className = 'nav-date';
+        dateSpan.textContent = item.dateRange;
+        textWrap.appendChild(dateSpan);
+      }
+
+      el.appendChild(dot);
+      el.appendChild(textWrap);
+
+      if (item.file) {
+        el.addEventListener('click', () => loadArticle(item, el, cat.category));
+      } else {
+        el.addEventListener('click', () => showComingSoon(item.title));
+      }
+
+      nav.appendChild(el);
+    });
+  });
+
+  function setActive(el) {
+    if (activeEl) activeEl.classList.remove('active');
+    activeEl = el;
+    el.classList.add('active');
+  }
+
+  function hideAll() {
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('coming-soon').style.display = 'none';
+    document.getElementById('article-wrap').style.display = 'none';
+  }
+
+  function showComingSoon(title) {
+    hideAll();
+    document.getElementById('coming-soon-title').textContent = title;
+    document.getElementById('coming-soon').style.display = 'block';
+  }
+
+  async function loadArticle(item, el, category) {
+    setActive(el);
+    hideAll();
+    document.getElementById('loading').style.display = 'block';
+
+    try {
+      const res = await fetch(item.file);
+      if (!res.ok) throw new Error('Not found');
+      const raw = await res.text();
+
+      // Separate body from sources section for word count
+      const hrIndex = raw.lastIndexOf('\n---\n');
+      const bodyText = hrIndex > -1 ? raw.substring(0, hrIndex) : raw;
+      const wordCount = bodyText.trim().split(/\s+/).length;
+      const readMins = Math.round(wordCount / 150);
+
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('article-wrap').style.display = 'block';
+      document.getElementById('meta-category').textContent = '📂 ' + category;
+      document.getElementById('meta-words').textContent = '✏️ ' + wordCount.toLocaleString() + ' words';
+      document.getElementById('meta-time').textContent = '🎧 ~' + readMins + ' min listen';
+      document.getElementById('article').innerHTML = marked.parse(raw);
+
+      // Scroll to top
+      document.getElementById('main').scrollTo(0, 0);
+      window.scrollTo(0, 0);
+
+    } catch (e) {
+      document.getElementById('loading').style.display = 'none';
+      showComingSoon(item.title);
+    }
+  }
+</script>
+</body>
+</html>
