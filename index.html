@@ -262,6 +262,25 @@
       gap: 5px;
     }
 
+    #meta-audio a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 4px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+    }
+
+    #meta-audio a:hover {
+      background: #b8962e;
+      color: #1a1a1a;
+    }
+
     #article {
       background: var(--content-bg);
       border: 1px solid var(--border);
@@ -406,6 +425,7 @@
         <span id="meta-category"></span>
         <span id="meta-words"></span>
         <span id="meta-time"></span>
+        <span id="meta-audio"></span>
       </div>
       <div id="article"></div>
     </div>
@@ -636,6 +656,11 @@
       const bodyText = hrIndex > -1 ? raw.substring(0, hrIndex) : raw;
       const wordCount = bodyText.trim().split(/\s+/).length;
       const readMins = Math.round(wordCount / 150);
+
+      const audioPath = item.file.replace('content/', 'audio/').replace('.md', '.m4a');
+      const audioSlug = audioPath.split('/').pop();
+      const audioEl = document.getElementById('meta-audio');
+      audioEl.innerHTML = `<a href="${audioPath}" download="${audioSlug}">⬇ Download audio</a>`;
 
       document.getElementById('loading').style.display = 'none';
       document.getElementById('article-wrap').style.display = 'block';
