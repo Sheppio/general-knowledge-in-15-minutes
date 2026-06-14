@@ -1,63 +1,78 @@
-Converting: economics/the-2008-financial-crisis.md
-  -> ./audio/economics/the-2008-financial-crisis.m4a
-Converting: economics/the-great-depression.md
-  -> ./audio/economics/the-great-depression.m4a
-Converting: geography/the-british-empire.md
-  -> ./audio/geography/the-british-empire.m4a
-Converting: geography/the-silk-road.md
-  -> ./audio/geography/the-silk-road.m4a
-Converting: health-and-society/the-1918-flu-pandemic.md
-  -> ./audio/health-and-society/the-1918-flu-pandemic.m4a
-Converting: health-and-society/the-history-of-democracy.md
-  -> ./audio/health-and-society/the-history-of-democracy.m4a
-Converting: history/the-age-of-exploration.md
-  -> ./audio/history/the-age-of-exploration.m4a
-Converting: history/the-american-civil-war.md
-  -> ./audio/history/the-american-civil-war.m4a
-Converting: history/the-black-death.md
-  -> ./audio/history/the-black-death.m4a
-Converting: history/the-cold-war.md
-  -> ./audio/history/the-cold-war.m4a
-Converting: history/the-french-revolution.md
-  -> ./audio/history/the-french-revolution.m4a
-Converting: history/the-holocaust.md
-  -> ./audio/history/the-holocaust.m4a
-Converting: history/the-mongol-empire.md
-  -> ./audio/history/the-mongol-empire.m4a
-Converting: history/the-roman-empire.md
-  -> ./audio/history/the-roman-empire.m4a
-Converting: history/the-russian-revolution.md
-  -> ./audio/history/the-russian-revolution.m4a
-Converting: history/the-viking-age.md
-  -> ./audio/history/the-viking-age.m4a
-Converting: history/world-war-one.md
-  -> ./audio/history/world-war-one.m4a
-Converting: history/world-war-two.md
-  -> ./audio/history/world-war-two.m4a
-Converting: people/abraham-lincoln.md
-  -> ./audio/people/abraham-lincoln.m4a
-Converting: people/marie-curie.md
-  -> ./audio/people/marie-curie.m4a
-Converting: people/napoleon-bonaparte.md
-  -> ./audio/people/napoleon-bonaparte.m4a
-Converting: people/winston-churchill.md
-  -> ./audio/people/winston-churchill.m4a
-Converting: philosophy/ancient-greek-philosophy.md
-  -> ./audio/philosophy/ancient-greek-philosophy.m4a
-Converting: philosophy/the-enlightenment.md
-  -> ./audio/philosophy/the-enlightenment.m4a
-Converting: science/charles-darwin-evolution.md
-  -> ./audio/science/charles-darwin-evolution.m4a
-Converting: science/einstein-and-relativity.md
-  -> ./audio/science/einstein-and-relativity.m4a
-Converting: science/isaac-newton.md
-  -> ./audio/science/isaac-newton.m4a
-Converting: science/the-discovery-of-dna.md
-  -> ./audio/science/the-discovery-of-dna.m4a
-Converting: science/the-space-race.md
-  -> ./audio/science/the-space-race.m4a
-Converting: technology/the-history-of-the-internet.md
-  -> ./audio/technology/the-history-of-the-internet.m4a
-Converting: technology/the-industrial-revolution.md
-  -> ./audio/technology/the-industrial-revolution.m4a
+Skipping (already exists): economics/capitalism.md
+Skipping (already exists): economics/the-2008-financial-crisis.md
+Skipping (already exists): economics/the-great-depression.md
+Skipping (already exists): economics/the-history-of-money.md
+Skipping (already exists): geography/the-british-empire.md
+Skipping (already exists): geography/the-history-of-india.md
+Skipping (already exists): geography/the-history-of-japan.md
+Skipping (already exists): geography/the-silk-road.md
+Skipping (already exists): health-and-society/the-1918-flu-pandemic.md
+Skipping (already exists): health-and-society/the-history-of-democracy.md
+Skipping (already exists): health-and-society/the-history-of-human-rights.md
+Skipping (already exists): health-and-society/the-history-of-slavery.md
+Skipping (already exists): health-and-society/the-hiv-aids-crisis.md
+Skipping (already exists): history/ancient-egypt.md
+Skipping (already exists): history/the-age-of-exploration.md
+Skipping (already exists): history/the-american-civil-war.md
+Skipping (already exists): history/the-american-revolution.md
+Skipping (already exists): history/the-black-death.md
+Skipping (already exists): history/the-cold-war.md
+Skipping (already exists): history/the-crusades.md
+Skipping (already exists): history/the-french-revolution.md
+Skipping (already exists): history/the-holocaust.md
+Skipping (already exists): history/the-mongol-empire.md
+Converting: history/the-ottoman-empire.md
+  -> ./audio/history/the-ottoman-empire.m4a
+Skipping (already exists): history/the-roman-empire.md
+Skipping (already exists): history/the-russian-revolution.md
+Skipping (already exists): history/the-rwandan-genocide.md
+Skipping (already exists): history/the-viking-age.md
+Skipping (already exists): history/world-war-one.md
+Skipping (already exists): history/world-war-two.md
+Skipping (already exists): people/abraham-lincoln.md
+Converting: people/julius-caesar.md
+  -> ./audio/people/julius-caesar.m4a
+Converting: people/mahatma-gandhi.md
+  -> ./audio/people/mahatma-gandhi.m4a
+Converting: people/mao-zedong.md
+  -> ./audio/people/mao-zedong.m4a
+Skipping (already exists): people/marie-curie.md
+Converting: people/martin-luther-king-jr.md
+  -> ./audio/people/martin-luther-king-jr.m4a
+Skipping (already exists): people/napoleon-bonaparte.md
+Converting: people/nelson-mandela.md
+  -> ./audio/people/nelson-mandela.m4a
+Skipping (already exists): people/winston-churchill.md
+Skipping (already exists): philosophy/ancient-greek-philosophy.md
+Converting: philosophy/existentialism.md
+  -> ./audio/philosophy/existentialism.m4a
+Converting: philosophy/karl-marx.md
+  -> ./audio/philosophy/karl-marx.m4a
+Converting: philosophy/sigmund-freud.md
+  -> ./audio/philosophy/sigmund-freud.m4a
+Skipping (already exists): philosophy/the-enlightenment.md
+Skipping (already exists): science/charles-darwin-evolution.md
+Converting: science/climate-change.md
+  -> ./audio/science/climate-change.m4a
+Skipping (already exists): science/einstein-and-relativity.md
+Converting: science/how-vaccines-work.md
+  -> ./audio/science/how-vaccines-work.m4a
+Skipping (already exists): science/isaac-newton.md
+Converting: science/the-big-bang-theory.md
+  -> ./audio/science/the-big-bang-theory.m4a
+Skipping (already exists): science/the-discovery-of-dna.md
+Skipping (already exists): science/the-space-race.md
+Converting: technology/the-atomic-bomb.md
+  -> ./audio/technology/the-atomic-bomb.m4a
+Converting: technology/the-history-of-artificial-intelligence.md
+  -> ./audio/technology/the-history-of-artificial-intelligence.m4a
+Skipping (already exists): technology/the-history-of-the-internet.md
+Skipping (already exists): technology/the-industrial-revolution.md
+Done.
+y/the-atomic-bomb.md
+  -> ./audio/technology/the-atomic-bomb.m4a
+Converting: technology/the-history-of-artificial-intelligence.md
+  -> ./audio/technology/the-history-of-artificial-intelligence.m4a
+Skipping (already exists): technology/the-history-of-the-internet.md
+Skipping (already exists): technology/the-industrial-revolution.md
 Done.

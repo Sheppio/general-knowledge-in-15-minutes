@@ -8,8 +8,13 @@ from pathlib import Path
 from openai import OpenAI
 
 # --- Configuration ---
-MODEL = "x-ai/grok-voice-tts-1.0"
-VOICE = "Ara"  # Grok voices: Eve, Ara, Rex, Sal, Leo
+MODEL = "hexgrad/kokoro-82m"
+VOICE = "bm_george"  # British male — good for educational narration
+# Other good options:
+#   American female: af_bella, af_sarah, af_heart, af_nova
+#   American male:   am_adam, am_michael, am_eric
+#   British female:  bf_emma, bf_alice, bf_isabella
+#   British male:    bm_george, bm_lewis, bm_daniel
 OUTPUT_FORMAT = "mp3"
 # ---------------------
 
