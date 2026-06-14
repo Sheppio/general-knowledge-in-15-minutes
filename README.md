@@ -8,7 +8,7 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 
 ---
 
-**Progress: 61 / 100 complete**
+**Progress: 66 / 100 complete**
 
 ---
 
@@ -39,11 +39,11 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | Ancient Egypt | [ancient-egypt.md](content/history/ancient-egypt.md) |
 | ✅ Done | The Byzantine Empire | [the-byzantine-empire.md](content/history/the-byzantine-empire.md) |
 | ✅ Done | The Ming Dynasty | [the-ming-dynasty.md](content/history/the-ming-dynasty.md) |
-| ⬜ Pending | The Birth of Islam | — |
-| ⬜ Pending | The Reformation | — |
+| ✅ Done | The Birth of Islam | [the-birth-of-islam.md](content/history/the-birth-of-islam.md) |
+| ✅ Done | The Reformation | [the-reformation.md](content/history/the-reformation.md) |
 | ✅ Done | The American Revolution | [the-american-revolution.md](content/history/the-american-revolution.md) |
-| ⬜ Pending | The Boer War | — |
-| ⬜ Pending | The Scramble for Africa | — |
+| ✅ Done | The Boer War | [the-boer-war.md](content/history/the-boer-war.md) |
+| ✅ Done | The Scramble for Africa | [the-scramble-for-africa.md](content/history/the-scramble-for-africa.md) |
 
 ### Science
 
@@ -55,7 +55,7 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The Discovery of DNA | [the-discovery-of-dna.md](content/science/the-discovery-of-dna.md) |
 | ✅ Done | The Big Bang Theory | [the-big-bang-theory.md](content/science/the-big-bang-theory.md) |
 | ✅ Done | Isaac Newton and the Laws of Motion | [isaac-newton.md](content/science/isaac-newton.md) |
-| ⬜ Pending | The History of Medicine — From Galen to Germ Theory | — |
+| ✅ Done | The History of Medicine — From Galen to Germ Theory | [the-history-of-medicine.md](content/science/the-history-of-medicine.md) |
 | ✅ Done | Climate Change — The Science | [climate-change.md](content/science/climate-change.md) |
 | ✅ Done | How Vaccines Work | [how-vaccines-work.md](content/science/how-vaccines-work.md) |
 | ⬜ Pending | The Theory of Plate Tectonics | — |
