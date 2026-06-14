@@ -8,7 +8,7 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 
 ---
 
-**Progress: 56 / 100 complete**
+**Progress: 61 / 100 complete**
 
 ---
 
@@ -33,12 +33,12 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The Russian Revolution | [the-russian-revolution.md](content/history/the-russian-revolution.md) |
 | ✅ Done | The Holocaust | [the-holocaust.md](content/history/the-holocaust.md) |
 | ✅ Done | The Rwandan Genocide | [the-rwandan-genocide.md](content/history/the-rwandan-genocide.md) |
-| ⬜ Pending | The Spanish Civil War | — |
-| ⬜ Pending | The Rise of Fascism in Europe | — |
-| ⬜ Pending | The Hundred Years War | — |
+| ✅ Done | The Spanish Civil War | [the-spanish-civil-war.md](content/history/the-spanish-civil-war.md) |
+| ✅ Done | The Rise of Fascism in Europe | [the-rise-of-fascism-in-europe.md](content/history/the-rise-of-fascism-in-europe.md) |
+| ✅ Done | The Hundred Years War | [the-hundred-years-war.md](content/history/the-hundred-years-war.md) |
 | ✅ Done | Ancient Egypt | [ancient-egypt.md](content/history/ancient-egypt.md) |
-| ⬜ Pending | The Byzantine Empire | — |
-| ⬜ Pending | The Ming Dynasty | — |
+| ✅ Done | The Byzantine Empire | [the-byzantine-empire.md](content/history/the-byzantine-empire.md) |
+| ✅ Done | The Ming Dynasty | [the-ming-dynasty.md](content/history/the-ming-dynasty.md) |
 | ⬜ Pending | The Birth of Islam | — |
 | ⬜ Pending | The Reformation | — |
 | ✅ Done | The American Revolution | [the-american-revolution.md](content/history/the-american-revolution.md) |
