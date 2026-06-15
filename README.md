@@ -8,7 +8,7 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 
 ---
 
-**Progress: 66 / 100 complete**
+**Progress: 71 / 100 complete**
 
 ---
 
@@ -58,11 +58,11 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The History of Medicine — From Galen to Germ Theory | [the-history-of-medicine.md](content/science/the-history-of-medicine.md) |
 | ✅ Done | Climate Change — The Science | [climate-change.md](content/science/climate-change.md) |
 | ✅ Done | How Vaccines Work | [how-vaccines-work.md](content/science/how-vaccines-work.md) |
-| ⬜ Pending | The Theory of Plate Tectonics | — |
-| ⬜ Pending | The Quantum Revolution | — |
-| ⬜ Pending | CRISPR and the Future of Genetics | — |
-| ⬜ Pending | Stephen Hawking and Black Holes | — |
-| ⬜ Pending | The History of Astronomy | — |
+| ✅ Done | The Theory of Plate Tectonics | [the-theory-of-plate-tectonics.md](content/science/the-theory-of-plate-tectonics.md) |
+| ✅ Done | The Quantum Revolution | [the-quantum-revolution.md](content/science/the-quantum-revolution.md) |
+| ✅ Done | CRISPR and the Future of Genetics | [crispr-and-the-future-of-genetics.md](content/science/crispr-and-the-future-of-genetics.md) |
+| ✅ Done | Stephen Hawking and Black Holes | [stephen-hawking-and-black-holes.md](content/science/stephen-hawking-and-black-holes.md) |
+| ✅ Done | The History of Astronomy | [the-history-of-astronomy.md](content/science/the-history-of-astronomy.md) |
 
 ### Economics
 
