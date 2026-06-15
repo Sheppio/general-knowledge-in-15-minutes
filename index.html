@@ -281,6 +281,31 @@
       color: #1a1a1a;
     }
 
+    #meta-copy button {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+    }
+
+    #meta-copy button:hover {
+      background: var(--sidebar-bg);
+      color: var(--text);
+    }
+
+    #meta-copy button.copied {
+      color: #5a9e6f;
+      border-color: #5a9e6f;
+    }
+
     #article {
       background: var(--content-bg);
       border: 1px solid var(--border);
@@ -578,6 +603,7 @@
         <span id="meta-words"></span>
         <span id="meta-time"></span>
         <span id="meta-audio"></span>
+        <span id="meta-copy"></span>
       </div>
       <div id="article"></div>
     </div>
@@ -826,6 +852,27 @@
       const audioSlug = audioPath.split('/').pop();
       const audioEl = document.getElementById('meta-audio');
       audioEl.innerHTML = `<a href="${audioPath}" download="${audioSlug}">⬇ Download audio</a>`;
+
+      const plainText = item.title + '\n\n' + bodyText
+        .replace(/^#{1,6}\s+/gm, '')
+        .replace(/^>\s*/gm, '')
+        .replace(/^---+$/gm, '')
+        .replace(/\*\*(.*?)\*\*/g, '$1')
+        .replace(/\*(.*?)\*/g, '$1')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+      const copyEl = document.getElementById('meta-copy');
+      copyEl.innerHTML = '<button>⎘ Copy text</button>';
+      copyEl.querySelector('button').addEventListener('click', function () {
+        navigator.clipboard.writeText(plainText).then(() => {
+          this.textContent = '✓ Copied!';
+          this.classList.add('copied');
+          setTimeout(() => {
+            this.textContent = '⎘ Copy text';
+            this.classList.remove('copied');
+          }, 2000);
+        });
+      });
 
       document.getElementById('loading').style.display = 'none';
       document.getElementById('article-wrap').style.display = 'block';
