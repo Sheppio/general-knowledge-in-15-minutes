@@ -8,7 +8,7 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 
 ---
 
-**Progress: 71 / 100 complete**
+**Progress: 91 / 91 complete ✅**
 
 ---
 
@@ -71,10 +71,10 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The Great Depression | [the-great-depression.md](content/economics/the-great-depression.md) |
 | ✅ Done | The 2008 Financial Crisis | [the-2008-financial-crisis.md](content/economics/the-2008-financial-crisis.md) |
 | ✅ Done | Capitalism — How It Works and Where It Came From | [capitalism.md](content/economics/capitalism.md) |
-| ⬜ Pending | The Rise of China's Economy | — |
+| ✅ Done | The Rise of China's Economy | [the-rise-of-chinas-economy.md](content/economics/the-rise-of-chinas-economy.md) |
 | ✅ Done | The History of Money | [the-history-of-money.md](content/economics/the-history-of-money.md) |
-| ⬜ Pending | Globalisation — Winners and Losers | — |
-| ⬜ Pending | The Economics of Inequality | — |
+| ✅ Done | Globalisation — Winners and Losers | [globalisation.md](content/economics/globalisation.md) |
+| ✅ Done | The Economics of Inequality | [the-economics-of-inequality.md](content/economics/the-economics-of-inequality.md) |
 
 ### Technology
 
@@ -84,9 +84,9 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The History of the Internet | [the-history-of-the-internet.md](content/technology/the-history-of-the-internet.md) |
 | ✅ Done | The History of Artificial Intelligence | [the-history-of-artificial-intelligence.md](content/technology/the-history-of-artificial-intelligence.md) |
 | ✅ Done | The Atomic Bomb — From Theory to Trinity | [the-atomic-bomb.md](content/technology/the-atomic-bomb.md) |
-| ⬜ Pending | The History of Flight | — |
-| ⬜ Pending | The History of Electricity | — |
-| ⬜ Pending | The Green Revolution — How Science Fed the World | — |
+| ✅ Done | The History of Flight | [the-history-of-flight.md](content/technology/the-history-of-flight.md) |
+| ✅ Done | The History of Electricity | [the-history-of-electricity.md](content/technology/the-history-of-electricity.md) |
+| ✅ Done | The Green Revolution — How Science Fed the World | [the-green-revolution.md](content/technology/the-green-revolution.md) |
 
 ### Philosophy & Ideas
 
@@ -96,9 +96,9 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | The Enlightenment | [the-enlightenment.md](content/philosophy/the-enlightenment.md) |
 | ✅ Done | Karl Marx and the Communist Manifesto | [karl-marx.md](content/philosophy/karl-marx.md) |
 | ✅ Done | Existentialism — Sartre, Camus, and Meaning | [existentialism.md](content/philosophy/existentialism.md) |
-| ⬜ Pending | The Scientific Revolution | — |
+| ✅ Done | The Scientific Revolution | [the-scientific-revolution.md](content/philosophy/the-scientific-revolution.md) |
 | ✅ Done | Sigmund Freud and the Unconscious Mind | [sigmund-freud.md](content/philosophy/sigmund-freud.md) |
-| ⬜ Pending | Adam Smith and the Wealth of Nations | — |
+| ✅ Done | Adam Smith and the Wealth of Nations | [adam-smith-and-the-wealth-of-nations.md](content/philosophy/adam-smith-and-the-wealth-of-nations.md) |
 
 ### Geography & Culture
 
@@ -106,12 +106,12 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 |---|---|---|
 | ✅ Done | The Silk Road | [the-silk-road.md](content/geography/the-silk-road.md) |
 | ✅ Done | The British Empire | [the-british-empire.md](content/geography/the-british-empire.md) |
-| ⬜ Pending | The Amazon — Earth's Greatest Rainforest | — |
+| ✅ Done | The Amazon — Earth's Greatest Rainforest | [the-amazon.md](content/geography/the-amazon.md) |
 | ✅ Done | The History of Japan | [the-history-of-japan.md](content/geography/the-history-of-japan.md) |
 | ✅ Done | The History of India | [the-history-of-india.md](content/geography/the-history-of-india.md) |
-| ⬜ Pending | Africa Before Colonialism | — |
-| ⬜ Pending | The History of China | — |
-| ⬜ Pending | The Mediterranean World | — |
+| ✅ Done | Africa Before Colonialism | [africa-before-colonialism.md](content/geography/africa-before-colonialism.md) |
+| ✅ Done | The History of China | [the-history-of-china.md](content/geography/the-history-of-china.md) |
+| ✅ Done | The Mediterranean World | [the-mediterranean-world.md](content/geography/the-mediterranean-world.md) |
 
 ### People
 
@@ -123,23 +123,23 @@ Each piece is written in flowing prose with no bullet points, headers mid-text, 
 | ✅ Done | Abraham Lincoln | [abraham-lincoln.md](content/people/abraham-lincoln.md) |
 | ✅ Done | Nelson Mandela | [nelson-mandela.md](content/people/nelson-mandela.md) |
 | ✅ Done | Mahatma Gandhi | [mahatma-gandhi.md](content/people/mahatma-gandhi.md) |
-| ⬜ Pending | Cleopatra | — |
-| ⬜ Pending | Leonardo da Vinci | — |
-| ⬜ Pending | Galileo Galilei | — |
+| ✅ Done | Cleopatra | [cleopatra.md](content/people/cleopatra.md) |
+| ✅ Done | Leonardo da Vinci | [leonardo-da-vinci.md](content/people/leonardo-da-vinci.md) |
+| ✅ Done | Galileo Galilei | [galileo-galilei.md](content/people/galileo-galilei.md) |
 | ✅ Done | Julius Caesar | [julius-caesar.md](content/people/julius-caesar.md) |
-| ⬜ Pending | Elizabeth I | — |
+| ✅ Done | Elizabeth I | [elizabeth-i.md](content/people/elizabeth-i.md) |
 | ✅ Done | Mao Zedong | [mao-zedong.md](content/people/mao-zedong.md) |
-| ⬜ Pending | Joseph Stalin | — |
+| ✅ Done | Joseph Stalin | [joseph-stalin.md](content/people/joseph-stalin.md) |
 | ✅ Done | Martin Luther King Jr. | [martin-luther-king-jr.md](content/people/martin-luther-king-jr.md) |
-| ⬜ Pending | Nikola Tesla | — |
-| ⬜ Pending | Ada Lovelace | — |
+| ✅ Done | Nikola Tesla | [nikola-tesla.md](content/people/nikola-tesla.md) |
+| ✅ Done | Ada Lovelace | [ada-lovelace.md](content/people/ada-lovelace.md) |
 
 ### Health & Society
 
 | Status | Title | File |
 |---|---|---|
 | ✅ Done | The 1918 Influenza Pandemic | [the-1918-flu-pandemic.md](content/health-and-society/the-1918-flu-pandemic.md) |
-| ⬜ Pending | The History of Mental Health | — |
+| ✅ Done | The History of Mental Health | [the-history-of-mental-health.md](content/health-and-society/the-history-of-mental-health.md) |
 | ✅ Done | The HIV/AIDS Crisis | [the-hiv-aids-crisis.md](content/health-and-society/the-hiv-aids-crisis.md) |
 | ✅ Done | The History of Human Rights | [the-history-of-human-rights.md](content/health-and-society/the-history-of-human-rights.md) |
 | ✅ Done | The History of Democracy | [the-history-of-democracy.md](content/health-and-society/the-history-of-democracy.md) |

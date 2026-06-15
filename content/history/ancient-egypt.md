@@ -1,6 +1,6 @@
 # Ancient Egypt: The Civilisation That Endured Three Thousand Years
 
-> Approximate reading time: 15 minutes
+> Approximate reading time: 11 minutes | Word count: ~1,570
 
 ---
 
